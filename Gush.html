@@ -8,9 +8,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
   <style>
-    /* =============================================
-       CSS RESET & BASE
-    ============================================= */
+    
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     html { scroll-behavior: smooth; }
     body {
@@ -24,9 +22,7 @@
     ul { list-style: none; }
     button { cursor: pointer; border: none; background: none; font-family: inherit; }
 
-    /* =============================================
-       CSS VARIABLES
-    ============================================= */
+    
     :root {
       --navy: #1a2a6c;
       --navy-dark: #0f1d5a;
@@ -48,9 +44,7 @@
       --transition: 0.22s ease;
     }
 
-    /* =============================================
-       CONTAINER SYSTEM
-    ============================================= */
+    
     .container {
       width: 100%;
       max-width: 1600px;
@@ -63,17 +57,13 @@
     @media (max-width: 1079px) { .container { max-width: 800px; padding: 0 48px; } }
     @media (max-width: 360px)  { .container { max-width: 360px; padding: 0 16px; } }
 
-    /* =============================================
-       NOISE TEXTURE BACKGROUND
-    ============================================= */
+    
     .noise-bg {
       background-color: #f5f5f7;
       background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.03'/%3E%3C/svg%3E");
     }
 
-    /* =============================================
-       NAVBAR
-    ============================================= */
+    
     .navbar {
       position: sticky;
       top: 0;
@@ -141,7 +131,7 @@
       transition: background var(--transition), transform var(--transition);
     }
     .btn-contact:hover { background: var(--navy-dark); transform: translateY(-1px); }
-    /* Breadcrumb */
+    
     .breadcrumb {
       display: flex;
       align-items: center;
@@ -158,9 +148,7 @@
     .breadcrumb-sep { font-size: 0.75rem; color: #ccc; }
     .breadcrumb span:last-child { color: var(--text-dark); font-weight: 500; }
 
-    /* =============================================
-       SECTION: PRODUCT HERO
-    ============================================= */
+    
     .product-hero {
       background: var(--white);
       padding: 48px 0 60px;
@@ -172,7 +160,7 @@
       align-items: start;
     }
 
-    /* Image gallery */
+    
     .gallery { display: flex; flex-direction: column; gap: 16px; }
     .gallery-main {
       position: relative;
@@ -236,7 +224,7 @@
     .gallery-thumb.active { border-color: var(--blue-accent); }
     .gallery-thumb img { width: 100%; height: 100%; object-fit: cover; }
 
-    /* Product info */
+    
     .product-info { display: flex; flex-direction: column; gap: 20px; }
     .cert-badges {
       display: flex;
@@ -342,7 +330,7 @@
     .btn-outline:hover { border-color: var(--navy); background: #f0f4ff; }
     .btn-outline svg { width: 14px; height: 14px; }
 
-    /* Trusted logos */
+    
     .trusted-section {
       padding: 36px 0;
       background: var(--white);
@@ -381,9 +369,7 @@
         }
     }
 
-    /* =============================================
-       SECTION: BUILT TO LAST (Features)
-    ============================================= */
+    
     .features-section {
       padding: 80px 0;
       background: var(--bg-light);
@@ -446,9 +432,7 @@
     }
     .btn-navy:hover { background: var(--navy-dark); transform: translateY(-2px); }
 
-    /* =============================================
-       SECTION: APPLICATIONS (Carousel)
-    ============================================= */
+    
     .applications-section {
       padding: 80px 0;
       background: var(--white);
@@ -519,9 +503,7 @@
       line-height: 1.5;
     }
 
-    /* =============================================
-       SECTION: MANUFACTURING PROCESS (Tabs)
-    ============================================= */
+    
     .process-section {
       padding: 80px 0;
       background: var(--bg-light);
@@ -615,9 +597,7 @@
     .process-image img { width: 100%; height: 100%; object-fit: cover; }
     .process-image .gallery-nav { width: 32px; height: 32px; }
 
-    /* =============================================
-       SECTION: TECHNICAL SPECS
-    ============================================= */
+    
     .specs-section {
       padding: 80px 0;
       background: var(--bg-dark);
@@ -682,9 +662,7 @@
     .btn-download:hover { background: rgba(255,255,255,0.08); border-color: rgba(255,255,255,0.5); }
     .btn-download svg { width: 16px; height: 16px; }
 
-    /* =============================================
-       SECTION: TESTIMONIALS
-    ============================================= */
+    
     .testimonials-section {
       padding: 80px 0 0;
       background: var(--bg-light);
@@ -741,9 +719,7 @@
     .author-name { font-size: 0.85rem; font-weight: 600; color: var(--text-dark); }
     .author-role { font-size: 0.75rem; color: var(--text-light); }
 
-    /* =============================================
-       SECTION: PIPING PORTFOLIO
-    ============================================= */
+    
     .portfolio-section {
       padding: 80px 0;
       background: var(--bg-light);
@@ -791,9 +767,7 @@
     }
     .btn-learn:hover { border-color: var(--navy); background: #f0f4ff; }
 
-    /* =============================================
-       SECTION: FAQ
-    ============================================= */
+    
     .faq-section {
       padding: 80px 0;
       background: var(--white);
@@ -846,7 +820,7 @@
       color: var(--text-light);
       line-height: 1.7;
     }
-    /* Catalogue CTA */
+    
     .catalogue-cta {
       margin-top: 32px;
       border: 1px solid var(--border);
@@ -874,9 +848,7 @@
     .catalogue-cta input:focus { border-color: var(--navy); }
     .catalogue-cta input::placeholder { color: var(--text-light); }
 
-    /* =============================================
-       SECTION: RESOURCES
-    ============================================= */
+    
     .resources-section {
       padding: 80px 0;
       background: var(--bg-light);
@@ -944,9 +916,7 @@
     .btn-download-row:hover { color: var(--blue-accent); }
     .btn-download-row svg { width: 14px; height: 14px; }
 
-    /* =============================================
-       SECTION: CTA (Contact form)
-    ============================================= */
+    
     .cta-section {
       padding: 80px 0;
       background: var(--bg-light);
@@ -1074,9 +1044,7 @@
     }
     .btn-cta:hover { background: #000; transform: translateY(-1px); }
 
-    /* =============================================
-       FOOTER
-    ============================================= */
+    
     footer {
       background: var(--white);
       border-top: 1px solid var(--border);
@@ -1160,9 +1128,7 @@
     }
     .footer-links a:hover { color: var(--navy); }
 
-    /* =============================================
-       MODAL (Datasheet Download)
-    ============================================= */
+    
     .modal-overlay {
       position: fixed;
       inset: 0;
@@ -1236,9 +1202,7 @@
     .modal-success h4 { font-size: 1.1rem; font-weight: 700; color: var(--text-dark); }
     .modal-success p { font-size: 0.88rem; color: var(--text-light); }
 
-    /* =============================================
-       RESPONSIVE
-    ============================================= */
+    
     @media (max-width: 1079px) {
       .product-hero .container { grid-template-columns: 1fr; }
       .features-grid { grid-template-columns: repeat(2, 1fr); }
@@ -1272,7 +1236,7 @@
 </head>
 <body class="noise-bg">
 
-  <!-- ========== NAVBAR ========== -->
+  
   <nav class="navbar">
     <div class="container">
       <a href="#" class="logo">
@@ -1292,7 +1256,7 @@
     </div>
   </nav>
 
-  <!-- ========== BREADCRUMB ========== -->
+  
   <div class="breadcrumb">
     <div class="container">
       <a href="#">Products</a>
@@ -1301,11 +1265,11 @@
     </div>
   </div>
 
-  <!-- ========== PRODUCT HERO ========== -->
+  
   <section class="product-hero">
     <div class="container">
 
-      <!-- Gallery -->
+      
       <div class="gallery">
         <div class="gallery-main" id="galleryMain">
           <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80" alt="HDPE Pipe machinery" id="mainImage" />
@@ -1320,7 +1284,7 @@
         <div class="gallery-thumbs" id="galleryThumbs"></div>
       </div>
 
-      <!-- Product Info -->
+      
       <div class="product-info">
         <div class="cert-badges">
           <div class="badge">
@@ -1365,7 +1329,7 @@
     </div>
   </section>
 
-  <!-- Trusted logos -->
+  
   <div class="trusted-section">
     <div class="container">
       <p class="trusted-label">Trusted by Hundreds of Companies Globally</p>
@@ -1398,7 +1362,7 @@
     </div>
   </div>
 
-   <!-- ========== TECHNICAL SPECS ========== -->
+   
   <section class="specs-section">
     <div class="container">
       <div class="section-header">
@@ -1430,7 +1394,7 @@
     </div>
   </section>
 
-  <!-- ========== FEATURES ========== -->
+  
   <section class="features-section">
     <div class="container">
       <div class="section-header">
@@ -1486,7 +1450,7 @@
       </div>
     </div>
   </section>
-  <!-- ========== FAQ ========== -->
+  
    <section class="faq-section">
     <div class="container">
       <div class="faq-header">
@@ -1540,7 +1504,7 @@
         </div>
       </div>
 
-     <!-- Catalogue CTA -->
+     
     <div class="catalogue-cta">
         <div class="catalogue-cta-text">
           <h4>Want us to email the entire catalogue?</h4>
@@ -1552,7 +1516,7 @@
         </div>
     </div>  
 
-  <!-- ========== APPLICATIONS ========== -->
+  
   <section class="applications-section">
     <div class="container">
       <div class="applications-header">
@@ -1611,7 +1575,7 @@
     </div>
   </section>
 
-  <!-- ========== PROCESS ========== -->
+  
   <section class="process-section">
     <div class="container">
       <div class="section-header">
@@ -1649,7 +1613,7 @@
     </div>
   </section>
 
-  <!-- ========== TESTIMONIALS ========== -->
+  
   <section class="testimonials-section">
     <div class="container">
       <h2 class="section-title">Trusted Performance. Proven Results.</h2>
@@ -1721,7 +1685,7 @@
     </div>
   </section>
 
-  <!-- ========== PORTFOLIO ========== -->
+  
   <section class="portfolio-section">
     <div class="container">
       <h2 class="section-title">Complete Piping Solutions Portfolio</h2>
@@ -1769,10 +1733,10 @@
     </div>
   </section>
 
-  <!-- ========== RESOURCES ========== -->
+  
   <section class="resources-section">
     <div class="container">
-      <!-- Expert bar -->
+      
       <div class="expert-bar">
         <div class="expert-bar-text">
           <h2>Didn't find <em>what you're looking for?</em></h2>
@@ -1785,7 +1749,7 @@
       </div>
 
       <hr>
-      <!-- Downloads -->
+      
       <div class="section-header">
         <h2 class="section-title">Resources &amp; Downloads</h2>
         <p class="section-sub">Get all the technical documentation and resources you need to make informed decisions about our HDPE piping solutions.</p>
@@ -1817,7 +1781,7 @@
   </section>
 
 
-  <!-- ========== CTA SECTION ========== -->
+  
   <section class="cta-section" id="cta">
     <div class="container">
       <div class="cta-box">
@@ -1847,7 +1811,7 @@
     </div>
   </section>
 
-  <!-- ========== FOOTER ========== -->
+  
   <footer>
     <div class="container">
         <div class="footer-brand">
@@ -1862,7 +1826,7 @@
         
       <div class="footer-main">
 
-        <!-- Categories -->
+        
 
         <div class="footer-col">
           <h4>About Us</h4>
@@ -1882,7 +1846,7 @@
           </ul>
         </div>
 
-        <!-- Products -->
+        
         <div class="footer-col">
           <h4>Products</h4>
           <ul>
@@ -1895,7 +1859,7 @@
           </ul>
         </div>
 
-        <!-- Contact -->
+        
         <div class="footer-col">
           <h4>Contact</h4>
           <div class="contact-rows">
@@ -1941,7 +1905,7 @@
     </div>
   </footer>
 
-  <!-- ========== MODAL ========== -->
+  
   <div class="modal-overlay" id="modalOverlay" onclick="handleOverlayClick(event)">
     <div class="modal" id="modal">
       <button class="modal-close" onclick="closeModal()" aria-label="Close">
@@ -1966,9 +1930,9 @@
     </div>
   </div>
 
-  <!-- ========== JAVASCRIPT ========== -->
+  
   <script>
-    /* ===== GALLERY ===== */
+    
     const galleryImages = [
       'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80',
       'https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=800&q=80',
@@ -2009,7 +1973,7 @@
     function slideGallery(dir) { goToImage(currentImg + dir); }
     buildGallery();
 
-    /* ===== CAROUSEL (Generic) ===== */
+    
     const carouselState = {};
     function slideCarousel(id, dir) {
       const track = document.getElementById(id + 'Track');
@@ -2024,7 +1988,7 @@
       track.style.transform = `translateX(-${carouselState[id] * cardW}px)`;
     }
 
-    /* ===== PROCESS TABS ===== */
+    
     const processData = [
       { title: 'High-Grade Raw Material Selection', desc: 'Vacuum sizing tanks ensure precise outer diameter while internal pressure maintains perfect roundness and wall thickness uniformity.', checks: ['PE100 grade material', 'Optimal molecular weight distribution'] },
       { title: 'Precision Extrusion Process', desc: 'State-of-the-art single or twin-screw extruders process the HDPE pellets at controlled temperatures to achieve optimal melt flow and molecular alignment.', checks: ['Temperature-controlled barrel zones', 'Consistent melt pressure monitoring'] },
@@ -2051,7 +2015,7 @@
       `;
     });
 
-    /* ===== FAQ ===== */
+    
     function toggleFaq(btn) {
       const item = btn.closest('.faq-item');
       const isOpen = item.classList.contains('open');
@@ -2060,7 +2024,7 @@
       if (!isOpen) item.classList.add('open');
     }
 
-    /* ===== MODAL ===== */
+    
     function openModal() {
       document.getElementById('modalOverlay').classList.add('active');
       document.body.style.overflow = 'hidden';
@@ -2082,7 +2046,7 @@
       document.getElementById('modalSuccess').style.display = 'flex';
     }
 
-    /* ===== ESC KEY ===== */
+    
     document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeModal(); });
   </script>
 </body>
